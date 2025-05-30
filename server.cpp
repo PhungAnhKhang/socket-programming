@@ -9,6 +9,7 @@
 #define BUFFER_SIZE 1000
 
 int main() {
+	freopen("out.txt", "w", stdout);
 	int sid = socket(AF_INET, SOCK_STREAM, 0);
 	sockaddr_in address;
 	memset(&address, 0, sizeof(address));
